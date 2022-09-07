@@ -88,7 +88,7 @@ resource "aws_security_group" "web_sg" {
 
 resource "aws_instance" "web_instance" {
   ami           = "ami-052efd3df9dad4825"
-  instance_type = "t2.nano"
+  instance_type = "t2.micro"
   key_name      = "My_practice"
 
   subnet_id                   = aws_subnet.prod_public_subnet.id
